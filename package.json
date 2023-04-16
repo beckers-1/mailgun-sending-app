@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "WebApp to send parameterised E-Mails",
   "scripts": {
-    "build": "parcel build --dist-dir dist --public-url . src/index.html",
-    "start": "parcel serve src/index.html",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && parcel build --dist-dir dist --public-url . src/index.html",
+    "start": "npm run clean && parcel serve src/index.html",
     "format": "prettier --write 'src/**/*'",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run clean && npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "buffer": "^5.7.1",
     "process": "^0.11.10"
   }
 }
