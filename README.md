@@ -9,7 +9,20 @@ WebApp to send parameterised E-Mails.
 ## Setup
 
 ```sh
+# install dependencies
 npm install
+
+# build /dist folder
+npm run build
+
+# serve live app
+npm run start
+
+# format code
+npm run format
+
+# deploy to GitHub Pages (can take up to 10 minutes)
+npm run deploy
 ```
 
 ## See also
