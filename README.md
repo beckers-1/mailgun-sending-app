@@ -1,10 +1,17 @@
 # mailgun-sending-app
-WebApp to send parameterised E-Mails
+
+WebApp to send parameterised E-Mails.
 
 ## Dependencies
 
-- npm (recommend https://github.com/nvm-sh/nvm to get it)
+- npm (recommend [nvm](https://github.com/nvm-sh/nvm) to get it)
 
 ## Setup
 
-- npm install
+```sh
+npm install
+```
+
+## See also
+
+- [Material UI](https://mui.com/material-ui/getting-started/overview/) (UI Framework)
